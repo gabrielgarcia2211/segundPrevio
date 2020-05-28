@@ -20,7 +20,7 @@
               <h3 class="login-heading mb-4">Registro de Tienda</h3>
               
               
-              <form action="loginControl" method="post">
+              <form action="registrarControl" method="post">
                 <div class="form-label-group">
                   <input name="nombre" type="text" id="inputNombre" class="form-control" placeholder="Nombre" required autofocus>
                   <label for="inputNombre">Nombre</label>
