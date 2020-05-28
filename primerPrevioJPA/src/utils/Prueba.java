@@ -20,19 +20,19 @@ public class Prueba {
 		
 		//CREACION DE UNA CLIENTE
 		
-		/*clienteDao cdao = new clienteDao();
+		clienteDao cdao = new clienteDao();
 		Cliente c = new Cliente();
 		
 		c.setClave("qqq");
 		c.setEmail("garcia@gar.com");
 		c.setNombre("gabriel");
 		
-		cdao.insert(c);*/
+		cdao.insert(c);
 		
 		
 		//CREACION DE UNA TIENDA
 		
-		/*tiendaDao tdao = new tiendaDao();
+		tiendaDao tdao = new tiendaDao();
 		Tienda t = new Tienda();
 		
 		t.setClave("221s2");
@@ -46,12 +46,12 @@ public class Prueba {
 		t.setWeb("tinda.cowm");
 		
 		
-		tdao.insert(t);*/
+		tdao.insert(t);
 		
 		
 		//CREACION DE UN SERVICIO
 		
-		/*servicioDao sdao = new servicioDao();
+		servicioDao sdao = new servicioDao();
 		Servicio s = new Servicio();
 		Tienda t2 = new Tienda();
 		tiendaDao tdao2 = new tiendaDao();
@@ -67,7 +67,7 @@ public class Prueba {
 	
 		s.setTiendaBean(aux);
 		
-		sdao.insert(s);*/
+		sdao.insert(s);
 		
 		
 		
@@ -79,7 +79,7 @@ public class Prueba {
 		tiendaDao tdaos = new tiendaDao();
 		
 		cs.setNombre("gabriel");
-		Cliente aux = cdaos.findByFieldObject(Cliente.class, "nombre", cs.getNombre());
+		Cliente auxTraer = cdaos.findByFieldObject(Cliente.class, "nombre", cs.getNombre());
 		
 		
 		ts.setNombre("hola mundo");
@@ -88,7 +88,7 @@ public class Prueba {
 		
 		
 		
-		//aux2.setClientes(aux);
+		//aux2.setClientes(auxTraer);
 		
 		tdaos.update(aux2);
 		
@@ -97,24 +97,24 @@ public class Prueba {
 		
 		//ACTUALIZAR UNA TIENDA
 		
-		/*Tienda tien = new Tienda();
+		Tienda tien = new Tienda();
 		tiendaDao tdaoa = new tiendaDao();
 		
 		tien.setNombre("hola");//traemos la tienda que deseamos actualizar
 		
-		Tienda aux = tdaoa.findByFieldObject(Tienda.class, "nombre", tien.getNombre());//guardamos en un objeto
+		Tienda auxUptade = tdaoa.findByFieldObject(Tienda.class, "nombre", tien.getNombre());//guardamos en un objeto
 		
-		aux.setClave("221s2");
-		aux.setDescripcion("primeras tienda");
-		aux.setEmail("tiendas@tineda.com");
-		aux.setFacebook("golas.com@g");
-		aux.setImagen("ggsss.jpg");
-		aux.setLema("si se puedess!");
-		aux.setNombre("hola mundo");
-		aux.setPropietario("quintero garcia");
-		aux.setWeb("tindaGABRIEL.cowm");
+		auxUptade.setClave("221s2");
+		auxUptade.setDescripcion("primeras tienda");
+		auxUptade.setEmail("tiendas@tineda.com");
+		auxUptade.setFacebook("golas.com@g");
+		auxUptade.setImagen("ggsss.jpg");
+		auxUptade.setLema("si se puedess!");
+		auxUptade.setNombre("hola mundo");
+		auxUptade.setPropietario("quintero garcia");
+		auxUptade.setWeb("tindaGABRIEL.cowm");
 		
-		tdaoa.update(aux);*/
+		tdaoa.update(aux);
 		
 		
 		
